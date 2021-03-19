@@ -39,17 +39,17 @@ function check() {
 	
 }
 function redirecttologin() {
-               window.location = "file:///C:/Users/kriti/OneDrive/Desktop/ishwarproject/login.html";
+               window.location = "file:///C:/Users/Palak/Documents/MADT%20Lambton/Coders_Hotel_FP/login.html";
             }
 
 function redirecttouser() {
-               window.location = "file:///C:/Users/kriti/OneDrive/Desktop/ishwarproject/userservices.html";
+               window.location = "file:///C:/Users/Palak/Documents/MADT%20Lambton/Coders_Hotel_FP/userservices.html";
             } 		
 
 
 function logout()
 {
 		window.localStorage.clear();
-		window.location = "file:///C:/Users/kriti/OneDrive/Desktop/ishwarproject/index.html";
+		window.location = "file:///C:/Users/Palak/Documents/MADT%20Lambton/Coders_Hotel_FP/index.html";
             
 }
