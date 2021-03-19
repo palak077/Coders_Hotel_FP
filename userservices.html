@@ -1,0 +1,230 @@
+<html>
+	<head>
+		<title>
+			BIHOSP :Our Services 
+		</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		
+	<!--banner section start--->
+	<section id="banner">
+		<header>
+		<div class="container">
+			<div class="row">
+				<div class="col logo"><a href="index.html"><h1>BIHOSP</h1><span>Hotel For Your Family</span></a></div>
+				<div class="col nav">
+					<a href="#" class="bars">&equiv;</a>
+				  	<ul class="">
+						<li>
+							<script>
+								document.write("<font color='red'> Welcome " + localStorage.getItem('uname')+ "</font>");
+								
+							</script>
+						</li>
+						<li><a href="userservices.html">Services</a></li>
+						<li><a href="#" id="toggle-wish-btn">Wishlist &hearts;</a>
+							<div id="shopping-wishlist" class="shopping-wish-container">
+							<a href="#" class="close-btnw">&times;</a>
+								<table id="wish-content">
+								  <thead>
+									<tr>
+									  <th>Image</th>
+									  <th>Name</th>
+									  <th>Price</th>
+									  <th></th>
+									</tr>
+								  </thead>
+								  <tbody></tbody>
+								</table>
+								
+								<a href="#" id="wishtocart" class="cart-btn">Add to cart</a>
+								<a href="#" id="clear-service" class="cart-btn">Clear service</a>
+							  </div>
+						
+						</li>
+						<li>
+							<a class="header__cart-btn" href="#" id="toggle-cart-btn"> Your Cart</a>
+						
+							<div id="shopping-cart" class="shopping-cart-container">
+								<a href="#" class="close-btnc">&times;</a>
+								<table id="cart-content">
+								  <thead>
+									<tr>
+									  <th>Image</th>
+									  <th>Name</th>
+									  <th>Price</th>
+									  <th></th>
+									</tr>
+								  </thead>
+								  <tbody></tbody>
+								</table>
+								<p class="total-container" id="total-price"></p>
+								<a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
+								<a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
+							  </div>
+						</li>
+						<li><a href="#" onclick="logout()">Logout</a></li>
+						<li>
+							<script>
+								document.write("<font color='red'>" + localStorage.getItem('mail')+ "</font>");
+								
+							</script>
+						</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!----header close-->
+		
+	</section>
+	<!-- about us section -->
+<!-- about us section -->
+	<section id="wehave">
+		<div class="container grid">
+			<h1 class="heading">Our Services</h1>
+			<div class="row">
+				<div class="col card_info">
+					<img src="images/food.jpeg" width="100%" class="card_image">
+					<h3 class="card_title">Food and Beverages</h3>
+					<p class="card_text">We provide Continental, Italian,Indian,South-Indian and Sea-Food to our customers.Wine,Cocktail, Juices , Soft-Drinks ETC.</p>
+					<p class="card__price">$100</p>
+					<button  class="card__btn add-to-cart" data-id="1">Add To cart</button>
+					<button  class="card__btn add-to-wish" data-id="1">Add To WishList</button>
+					
+				</div>
+				<!-- col end -->
+				<div class="col card_info">
+					<img src="images/spa.jpeg" width="100%" class="card_image">
+					<h3 class="card_title">Spa</h3>
+					<p class="card_text">We provide body and hair spa for men , women and Family.Customize Beauty treatments, Massages,Hair Wash Etc. for Customer.</p>
+					<p class="card__price">$50</p>
+					<button  class="card__btn add-to-cart" data-id="2">Add To cart</button>
+					<button  class="card__btn add-to-wish" data-id="2">Add To WishList</button>
+					
+				</div>
+				<!--col end-->
+				<div class="col card_info">
+					<img src="images/swim.jpeg" width="100%" class="card_image">
+					<h3 class="card_title">Swimming</h3>
+					<p class="card_text">We have 2 large swimming pools for our customers and 1 small for kids.We take care of all kind of Security for kids and elders.</p>
+					<p class="card__price">$150</p>
+					<button  class="card__btn add-to-cart" data-id="3">Add To cart</button>
+					<button  class="card__btn add-to-wish" data-id="3">Add To WishList</button>
+					
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col card_info">
+					<img src="images/cleaning.jpeg" width="100%" class="card_image">
+					<h3 class="card_title">Cleanliness</h3>
+					<p class="card_text">We provide clean and fresh rooms,laundry,and good environment to our customers.</p>
+					<p class="card__price">$30</p>
+					<button  class="card__btn add-to-cart" data-id="4">Add To cart</button>
+					<button  class="card__btn add-to-wish" data-id="4">Add To WishList</button>
+					
+				</div>
+				<div class="col card_info">
+					<img src="images/party.jpeg" width="100%" class="card_image">
+					<h3 class="card_title">Fun and Party Arrangements</h3>
+					<p class="card_text">We have so much entertainment fun for customers.We arrange different party's , games for kids and elders</p>
+					<p class="card__price">$70</p>
+					<button  class="card__btn add-to-cart" data-id="5">Add To cart</button>
+					<button  class="card__btn add-to-wish" data-id="5">Add To WishList</button>
+					
+				</div>
+				<div class="col card_info">
+					<img src="images/luxuryroom.jpeg" width="100%" class="card_image">
+					<h3 class="card_title">Luxury Rooms</h3>
+					<p class="card_text">We also provide luxury rooms, Customize settings according to customer's need</p>
+					<p class="card__price">$270</p>
+					<button  class="card__btn add-to-cart" data-id="6">Add To cart</button>
+					<button  class="card__btn add-to-wish" data-id="2">Add To WishList</button>
+					
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<!-- container close -->
+	</section>
+	
+	<!------------------customer reviews----------->
+	<section id="customerreview">
+		<div class="container">
+			<h1 class="heading">Happy Customers</h1>
+			<p class="center">Read some of the reviews of our happy customers</p>
+			<div class="row">
+				<div class="col">
+					<h4>Steve</h4>
+					<p>best environment</p>
+				</div>
+				<div class="col">
+					<h4>John</h4>
+					<p>best staff</p>
+				</div>
+				<div class="col">
+					<h4>Richard</h4>
+					<p>Best place for family</p>
+				</div>
+				<div class="col">
+					<h4>david</h4>
+					<p>love the environment</p>
+				</div>
+				<div class="col">
+					<h4>Nik</h4>
+					<p>Good Staff,Clean Places</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!------------------------------footer------------------>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					© Palak,2021.
+				</div>
+				<div class="col">
+					<a href="index.html">Home | </a>
+					<a href="about.html">About | </a>
+					<a href="services.html">Services | </a>
+					<a href="gallery.html">Gallery | </a>
+					<a href="contact.html">Contact | </a>
+					<a href="booking.html">Book Room</a>
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!----------------footer end--->
+	<!-- script files -->
+	<script src="js/jquery.js"></script>
+	<script src="js/cart.js"></script>
+	<script src="js/register.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('.bars').click(function(e){
+				$('.nav ul').toggleClass('active');
+				e.preventDefault();
+			})
+			$('.servicebutton').click(function(e){
+				e.preventDefault();
+			})
+			
+			
+			
+		})
+	</script>
+	</body>
+</html>
