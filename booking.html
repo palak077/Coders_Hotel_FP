@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<title>
+			BIHOSP :Online Booking
+		</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		
+	<!--banner section start--->
+	<section id="banner">
+		<header>
+		<div class="container">
+			<div class="row">
+				<div class="col logo"><a href="index.html"><h1>BIHOSP</h1><span>Hotel For Your Family</span></a></div>
+				<div class="col nav">
+					<a href="#" class="bars">&equiv;</a>
+				  	<ul class="">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="booking.html">Book Room</a></li>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="login.html">Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!----header close-->
+		<div class="container bannertext otherpagebanner">
+			<h1 class="bannerheading">hotel bihosp</h1>
+			<p>A family hotel that complete all your essentials</p>
+			<a href="booking.html">Book Now</a>
+		</div>
+	</section>
+	<!-- about us section -->
+	<section id="contact">
+		<div class="container">
+			<h1 class="heading">Book Your Room</h1>
+			<div class="col bookingform">
+                	<!-- <form class="bookingform" id="bookform" onsubmit=""> -->
+                    	<label>Enter Name</label>
+                    	<input type="text" name="fname" id="fname" >
+						<span id="nameerror"></span>
+						
+						<!-- address input -->
+                        <label>Enter Your Address</label>
+                    	<textarea  id="address" name="query" rows="7" ></textarea>
+						<span id="addresserror"></span>
+						
+						<!-- email input -->
+                        <label>Enter Email</label>
+                    	<input type="email" name="mail" id="mail" >
+						<span id="emailerror"></span>
+						
+						<!-- phoneinput -->
+						<label>Enter Phone</label>
+                    	<input type="tel" name="phone" id="phone"  pattern="[0-9]+">
+						<span id="phoneerror"></span>
+						
+						<!-- person input -->
+						<label>Total Number of Persons</label>
+                    	<input type="number" name="person" id="person" >
+						<span id="personerror"></span>
+						
+						
+						<label>Rooms</label>
+                    	<input type="number" name="room" id="room">
+						<span id="roomerror"></span>
+						
+						<label>Booking Date</label><br>	
+						<span>From</span>
+                    	<input type="date" name="datefrom" id="datefrom">
+						<span>To</span>
+                    	<input type="date" name="dateto" id="dateto">
+						
+                        
+                        <div class="form-group radiocard" >
+                        <h3>choose your payment type</h3>
+						
+                         <div><input type="radio" name="card" checked value="MasterCard">MasterCard</div>
+                         <div><input type="radio" name="card" value="Visa">Visa</div>
+                         <div ><input type="radio" name="card" value="AmEx">AmEx</div>
+                         
+                        </div>
+						<!-- instructions input -->
+                        <label>Enter Your Instruction(Optional)</label>
+                    	<textarea  id="instructions" name="query" rows="7" ></textarea>
+						<span id="instructionerror"></span>
+                        <div>
+						<label>Enter Credit Card Number</label>
+                    	<input type="" name="credit" id="card" >
+						
+						
+                       	<input type="checkbox" checked disabled> &nbsp;I have Read The Terms and Conditions
+                        </div>
+						
+						
+                        <input type="submit" value="submit" id="register">
+                    	
+                    <!-- </form> -->
+			</div>
+			
+		</div>
+		<!-- container close -->
+	</section>
+	<p id="output">
+		
+	</p>
+	<!------------------customer reviews----------->
+	<section id="customerreview">
+		<div class="container">
+			<h1 class="heading">Happy Customers</h1>
+			<p class="center">Read some of the reviews of our happy customers</p>
+			<div class="row">
+				<div class="col">
+					<h4>Steve</h4>
+					<p>best environment</p>
+				</div>
+				<div class="col">
+					<h4>John</h4>
+					<p>best staff</p>
+				</div>
+				<div class="col">
+					<h4>Richard</h4>
+					<p>Best place for family</p>
+				</div>
+				<div class="col">
+					<h4>david</h4>
+					<p>love the environment</p>
+				</div>
+				<div class="col">
+					<h4>Nik</h4>
+					<p>Good Staff,Clean Places</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!------------------------------footer------------------>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					© BIHOSP, 2021
+				</div>
+				<div class="col">
+					<a href="index.html">Home | </a>
+					<a href="about.html">About | </a>
+					<a href="services.html">Services | </a>
+					<a href="gallery.html">Gallery | </a>
+					<a href="contact.html">Contact | </a>
+					<a href="booking.html">Book Room</a>
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!----------------footer end--->
+	<script src="js/jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.bars').click(function(e){
+				$('.nav ul').toggleClass('active');
+			})
+		})
+	</script>
+	<script src="js/main.js"></script>
+	</body>
+</html>
