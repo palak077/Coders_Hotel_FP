@@ -2,8 +2,8 @@
 {
 	box-sizing: border-box;
 }
-.top {
-   // background: #009dff;
+.top 
+{
     background:linear-gradient(to right,#009dff 0,#00c8ff 30%,yellow 60%, pink 100%);
     
     top:0;
